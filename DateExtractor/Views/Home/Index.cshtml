@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome to Date Extractor</h1>
+    <h2>Enter your string and I'll extract the Date hidden in it</h2>
+    <form asp-action="dateExtractor" asp-controller="Home" method="post">
+        <label  for="randomString">Enter your string : </label>
+        <input type="text" id="randomString" name="randomString" required />
+        <input id="submit1" type="submit" value="Extract" />
+    </form>
+</div>
